@@ -13,34 +13,34 @@ function Body() {
           background-image: url(./화병.jpeg);
           background-repeat: no-repeat;
   `
-
   const StyledHeader = styled.body`
       body {
-
           background-color: #ececec9e;
           color: #555555;
           width: 1000px;
-
       }
-
-    
+      h2{
+        font-size: 28px;
+        font-weight: 900;
+      }
   `
     return(
-      <Body className="background">
-        <ListHeader>
-        <h2>TO DO LIST</h2>
-        </ListHeader>
+      <StyledBackground className="background">
+         <body>
+        <StyledHeader>      
+          <h2>TO DO LIST</h2> 
+        </StyledHeader>
+            <Wrap>
+              <Header>
+                <TodoForm>
+                  <Button>
 
-      <Wrap>
-        <Header>
-          <TodoForm>
-            <Button>
-
-            </Button>
-          </TodoForm>
-        </Header>
-      </Wrap>
-      </Body>
+                  </Button>
+                </TodoForm>
+              </Header>
+            </Wrap>
+      </body>
+      </StyledBackground>
     
     )
 }
